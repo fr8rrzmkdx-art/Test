@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; background:#f2f6ff; margin:0; padding:20px; }
+.container { max-width:500px; margin:auto; background:#fff; padding:20px; border-radius:10px;}
+.product { border:1px solid #e0e0e0; padding:15px; border-radius:10px; margin-bottom:15px; }
+button { background:#007bff; border:none; color:white; padding:10px 15px; border-radius:8px; margin-top:10px; }
+.hidden { display:none; }
+#cart { margin-top:20px; }

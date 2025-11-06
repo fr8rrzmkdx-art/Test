@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moustachu Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Moustachu Shop</h1>
+
+    <div class="product">
+        <h2>Caramel Bleu</h2>
+        <p>Délicieux bonbon artisanal</p>
+        <span class="price">5 €</span>
+        <button onclick="addToCart('Caramel Bleu', 5)">Ajouter</button>
+    </div>
+
+    <div id="cart">
+        <h2>Panier</h2>
+        <ul id="cartItems"></ul>
+        <p id="totalPrice"></p>
+        <button onclick="showOrderForm()" id="checkoutBtn" class="hidden">Commander</button>
+    </div>
+
+    <div id="orderForm" class="hidden">
+        <h2>Finaliser la commande</h2>
+        <input id="name" placeholder="Nom complet">
+        <input id="address" placeholder="Adresse">
+        <input id="zip" placeholder="Code postal">
+        <button onclick="sendOrder()">Envoyer</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
